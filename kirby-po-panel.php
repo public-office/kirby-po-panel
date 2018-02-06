@@ -1,5 +1,5 @@
 <?php
 
 kirby()->set('option', 'panel.stylesheet', array(
-  'site/plugins/kirby-po-panel/assets/panel.css'
+  'assets/plugins/kirby-po-panel/css/panel.css'
 ));
