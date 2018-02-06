@@ -4,13 +4,13 @@
 
 If you have Kirby CLI installed
 
-```
+```bash
 kirby plugin:install public-office/kirby-po-panel
 ```
 
 you'll also be able to update the plugin by running
 
-```
+```bash
 kirby plugin:update public-office/kirby-po-panel
 ```
 
