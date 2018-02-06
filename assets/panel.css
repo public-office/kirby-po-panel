@@ -1,0 +1,360 @@
+@font-face {
+	font-family: 'Gestalt';
+	src: url('../fonts/Gestalt-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+}
+
+* {
+  font-family: 'Gestalt';
+}
+
+.languages, .topbar {
+    z-index: 100;
+    background: #f7f7f7;;
+}
+
+.main {
+	border-top: 1px solid #ddd;
+}
+
+.nav-icon, .breadcrumb {
+	background: white;
+	color: #272727;
+}
+
+.breadcrumb-link {
+	color: #272727;
+}
+
+.breadcrumb ul {
+    display: block;
+    padding-top: 1rem;
+}
+
+.breadcrumb-link::before,
+.breadcrumb-link::after {
+	background: transparent;
+}
+
+ul.breadcrumb-list li a::after {
+	content: '/';
+	padding-top: 0;
+}
+
+ul.breadcrumb-list li:last-of-type a::after {
+	content: '';
+}
+
+body.ltr .nav-icon-left, body.rtl .nav-icon-right {
+    border-right: 1px solid #ddd;
+}
+
+body.ltr .nav-icon-right, body.rtl .nav-icon-left {
+    border-left: 1px solid #ddd;
+}
+
+body.ltr .breadcrumb-link {
+    padding-left: 1em;
+}
+
+body.ltr .breadcrumb-link:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+body.ltr .breadcrumb-link:after {
+    transform: none;
+}
+
+body.ltr .breadcrumb-link:after {
+    transform: none;
+}
+
+body.ltr .breadcrumb-label:after {
+  right: 0;
+  background: transparent;
+}
+
+body.ltr .breadcrumb-label {
+	padding: 0 .75em 1em 0;
+}
+
+.ltr .mainbar .form .buttons {
+    left: 30%;
+    right: 0;
+}
+
+.app  {
+	background: #f7f7f7;
+}
+
+body.login input {
+	border: 1px solid #eee;
+}
+
+.label abbr {
+  color: blue;
+  border: 0;
+}
+
+.sidebar {
+	width: 30%;
+}
+
+.sidebar::-webkit-scrollbar {
+ display: none;
+}
+
+.bars-with-sidebar-left:before {
+    content: "";
+    width: 30%;
+    background: #fff;
+    z-index: -1;
+}
+
+.mainbar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+/* Form Fields etc */
+
+.fileview {
+    top: 3em;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+		border-top: 1px solid #eee;
+}
+
+.tag .tag-label:focus, .tag-is-focused .tag-label {
+    outline: 0;
+    background: blue;
+}
+
+.input:focus {
+  outline: 0;
+  border-color: blue;
+}
+
+.fileview-sidebar input,
+.fileview-sidebar .input-with-checkbox
+.fileview-sidebar .input-with-selectbox {
+	border: 1px solid #ddd !important;
+}
+
+.input,
+.structure-entry {
+  border: 1px solid #fff;
+}
+
+.label,
+.hgroup-title {
+  font-weight: 400;
+  text-transform: uppercase;
+	font-size: 0.8em;
+	color: #777;
+}
+
+.search-input {
+  width: 100%;
+  padding: .75em 1em;
+  border: 0;
+  background: white;
+	outline: 1px solid #eee;
+}
+
+.search:after {
+    border-bottom-color: white;
+}
+
+.search-section:hover {
+	background: blue;
+}
+
+.search-section li a:hover span,
+.search-section li a:hover .icon {
+	color: white;
+}
+
+.field-with-headline .hgroup:before {
+    position: absolute;
+    content: counter(count,decimal-leading-zero);
+    left: 0;
+    color: blue;
+		font-size: 0.85em;
+		padding-top: 0.3em;
+    font-weight: 400;
+}
+
+.hgroup-title {
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.field-with-headline .hgroup span {
+    padding-left: 2em;
+}
+
+.hgroup a:after {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -5px;
+    height: 1px;
+    width: 100%;
+    background: #000;
+}
+
+.hgroup-options {
+    display: block;
+    font-size: 1em;
+    font-weight: 400;
+    color: #777;
+		padding-top: 0.3rem;
+}
+
+.mainbar .form .buttons .text span {
+    position: relative;
+    padding: .35rem 2rem;
+    background: blue;
+    display: inline-block;
+    margin: 0 auto 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    box-shadow: rgba(0,0,0,.05) 0 2px 10px;
+}
+
+.mainbar .form .buttons .text span:after {
+    position: absolute;
+    content: "";
+    border-top: 5px solid blue;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+/*.structure-table th {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    border-right: none;
+    text-align: left;
+    vertical-align: top;
+}*/
+
+.structure-table {
+    width: 100%;
+    border-spacing: 0;
+    /*border: 1px solid #ddd;*/
+		border: none;
+    table-layout: fixed;
+}
+
+.structure-table th {
+    padding: .5em;
+    font-weight: 400;
+    color: #777;
+     font-style: normal;
+}
+
+.structure-table-options {
+    width: 3rem;
+    text-align: center;
+    border-right: none !important;
+}
+
+.structure-table td:last-of-type,
+.structure-table th:last-of-type {
+	/*border-bottom: none;*/
+}
+
+.structure-table td a {
+    display: block;
+    padding: .5em;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    cursor: move;
+}
+
+.section {
+    padding: 1.5em;
+		padding-top: 2em;
+}
+
+.modal-content input,
+.modal-content .input-with-checkbox,
+.modal-content .input-with-selectbox {
+	border: 1px solid #ddd;
+}
+
+.modal-content .btn-rounded {
+	border: 1px solid #ddd;
+}
+
+.btn-rounded {
+    font-weight: 400;
+    border-radius: 5em;
+		background: white;
+		border: none;
+    padding: .4em 1.5em;
+}
+
+.btn-rounded:hover {
+	background: blue;
+	color: white;
+	border: none;
+}
+
+/* Selector */
+
+.selector-item-selected {
+    color: #fff;
+    background: rgba(0, 0, 255, 0.25);
+}
+
+.selector-item-selected a {
+    color: rgba(255, 255, 255, .7);
+    background: rgba(0, 0, 255, 0.25);
+}
+
+/* Calendar */
+
+.is-selected .pika-button, .is-selected .pika-button:hover {
+    color: #000;
+    background: blue;
+		color: white;
+}
+
+.is-today .pika-button {
+    color: blue;
+		border: 1px solid blue;
+}
+
+/* Dashboard */
+
+.dashboard-section {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5em;
+    width: 100%;
+    padding: 1em 1.5em !important;
+}
+
+.dashboard-box {
+    position: relative;
+    display: block;
+    border: none;
+    overflow: hidden;
+    background: #f7f7f7;
+}
+
+textarea.input {
+	border: 1px solid #ddd;
+}
