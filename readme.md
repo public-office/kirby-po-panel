@@ -2,7 +2,7 @@
 
 ## Installation
 
-If you have Kirby CLI installed
+If you have [Kirby CLI](https://github.com/getkirby/cli) installed
 
 ```bash
 kirby plugin:install public-office/kirby-po-panel
