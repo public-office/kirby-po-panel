@@ -1,6 +1,6 @@
 {
   "name": "kirby-po-panel",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Public Office Kirby Panel Stylesheet",
   "main": "index.js",
   "repository": "https://github.com/public-office/kirby-po-panel",
