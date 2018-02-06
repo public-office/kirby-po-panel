@@ -21,4 +21,4 @@ If you don't have Kirby CLI installed
 
 ## Thanks
 
-* [Seb McLauchlan](sebmclauchlan.com)
+* [Seb McLauchlan](http://sebmclauchlan.com)
